@@ -19,8 +19,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "types": ["cssjson"]
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "types": ["cssjson", "node"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "server/**/*", "client/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
